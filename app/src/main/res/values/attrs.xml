@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListTile">
+
+        <attr name="title" format="string" />
+        <attr name="leading" format="reference" />
+        <attr name="trailing" format="reference" />
+
+    </declare-styleable>
+
+</resources>

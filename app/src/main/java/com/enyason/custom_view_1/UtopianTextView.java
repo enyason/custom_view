@@ -3,7 +3,6 @@ package com.enyason.custom_view_1;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Toast;
@@ -15,13 +14,13 @@ public class UtopianTextView extends android.support.v7.widget.AppCompatTextView
         init();
     }
 
-    public UtopianTextView(Context context, @Nullable AttributeSet attrs) {
+    public UtopianTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
 
     }
 
-    public UtopianTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public UtopianTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
 
@@ -40,7 +39,7 @@ public class UtopianTextView extends android.support.v7.widget.AppCompatTextView
 
     @Override
     public void onClick(View v) {
-      Toast.makeText(getContext(),"Hello Utopian",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "Hello Utopian", Toast.LENGTH_SHORT).show();
         Uri webPage = Uri.parse("https://utopian.io");
         Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
 
